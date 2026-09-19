@@ -1,0 +1,4 @@
+node_modules
+.env
+dist
+# Note: Keep 'docs' tracked so GitHub Pages "Deploy from branch (/docs)" works directly
