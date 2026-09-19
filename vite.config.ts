@@ -94,6 +94,7 @@ Provide an authoritative, crisp, and actionable analysis:
 
 export default defineConfig(() => {
   return {
+    base: './',
     plugins: [react(), tailwindcss(), copilotApiPlugin()],
     resolve: {
       alias: {

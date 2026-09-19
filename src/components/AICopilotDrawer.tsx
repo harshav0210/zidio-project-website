@@ -89,6 +89,10 @@ export const AICopilotDrawer: React.FC<AICopilotDrawerProps> = ({
         }),
       });
 
+      if (!response.ok) {
+        throw new Error(`API status ${response.status}`);
+      }
+
       const data = await response.json();
       const replyText = data.text || 'Analysis completed.';
 
